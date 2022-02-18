@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.control.Controller">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#importOriginalProducts" prefHeight="44.0" prefWidth="147.0" text="Import Original Products" />
+      <TextField fx:id="titleFieldAdmin" layoutX="14.0" layoutY="112.0" promptText="Title" />
+      <TextField fx:id="ratingFieldAdmin" layoutX="14.0" layoutY="146.0" promptText="Rating" />
+      <TextField fx:id="caloriesFieldAdmin" layoutX="14.0" layoutY="179.0" promptText="Calories" />
+      <TextField fx:id="proteinFieldAdmin" layoutX="14.0" layoutY="212.0" promptText="Protein" />
+      <TextField fx:id="fatFieldAdmin" layoutX="14.0" layoutY="246.0" promptText="Fat" />
+      <TextField fx:id="sodiumFieldAdmin" layoutX="14.0" layoutY="277.0" promptText="Sodium" />
+      <TextField fx:id="priceFieldAdmin" layoutX="14.0" layoutY="309.0" promptText="Price" />
+      <Button layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#addProductAdmin" prefHeight="44.0" prefWidth="149.0" text="Add Product" />
+      <Button layoutX="14.0" layoutY="394.0" mnemonicParsing="false" onAction="#deleteProductAdmin" prefHeight="44.0" prefWidth="150.0" text="Delete Product" />
+      <Button layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#modifyProductAdmin" prefHeight="44.0" prefWidth="150.0" text="Modify Product" />
+      <TableView fx:id="adminProductTable" layoutX="168.0" layoutY="62.0" prefHeight="206.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="adminColumnId" prefWidth="52.0" text="Id" />
+          <TableColumn fx:id="adminColumnTitle" prefWidth="136.0" text="Title" />
+            <TableColumn fx:id="adminColumnRating" prefWidth="107.20001220703125" text="Rating" />
+            <TableColumn fx:id="adminColumnCalories" prefWidth="72.0" text="Calories" />
+            <TableColumn fx:id="adminColumnProtein" prefWidth="77.5999755859375" text="Protein" />
+            <TableColumn fx:id="adminColumnFat" prefWidth="61.60003662109375" text="Fat" />
+            <TableColumn fx:id="adminColumnSodium" prefWidth="63.2000732421875" text="Sodium" />
+            <TableColumn fx:id="adminColumnPrice" prefWidth="62.4000244140625" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idFieldAdmin" layoutX="13.0" layoutY="79.0" promptText="Id" />
+      <TextField fx:id="menuFieldAdmin" layoutX="188.0" layoutY="9.0" prefHeight="26.0" prefWidth="402.0" promptText="Enter the ids of items you want to add to a menu with spaces in between" />
+      <Button layoutX="598.0" layoutY="9.0" mnemonicParsing="false" onAction="#createMenuItemAdmin" prefHeight="44.0" prefWidth="172.0" text="Create menu item" />
+      <Button layoutX="635.0" layoutY="496.0" mnemonicParsing="false" onAction="#goBackToLogin" prefHeight="89.0" prefWidth="150.0" text="Log Out" />
+      <Button layoutX="170.0" layoutY="495.0" mnemonicParsing="false" onAction="#saveCurrentMenu" prefHeight="90.0" prefWidth="135.0" text="Save Current Menu" />
+      <Button layoutX="473.0" layoutY="495.0" mnemonicParsing="false" onAction="#goToReportPage" prefHeight="90.0" prefWidth="147.0" text="GoTo Report Page" />
+      <Button layoutX="314.0" layoutY="495.0" mnemonicParsing="false" onAction="#updateTableWithCurrentItems" prefHeight="90.0" prefWidth="150.0" text="Refresh" />
+      <Button layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#adminFindItem" prefHeight="44.0" prefWidth="150.0" text="Find" />
+      <TextField fx:id="errorLogAdmin" layoutX="170.0" layoutY="467.0" prefHeight="26.0" prefWidth="622.0" style="-fx-text-fill: red;" />
+      <TextField fx:id="adminProductName" layoutX="188.0" layoutY="35.0" prefHeight="26.0" prefWidth="255.0" promptText="Enter the name of the new product" />
+      <TableView fx:id="adminProductTable1" layoutX="168.0" layoutY="270.0" prefHeight="197.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="adminColumnId1" prefWidth="52.0" text="Id" />
+            <TableColumn fx:id="adminColumnTitle1" prefWidth="136.0" text="Title" />
+            <TableColumn fx:id="adminColumnRating1" prefWidth="107.20001220703125" text="Rating" />
+            <TableColumn fx:id="adminColumnCalories1" prefWidth="70.4000244140625" text="Calories" />
+            <TableColumn fx:id="adminColumnProtein1" prefWidth="79.20001220703125" text="Protein" />
+            <TableColumn fx:id="adminColumnFat1" prefWidth="61.60003662109375" text="Fat" />
+            <TableColumn fx:id="adminColumnSodium1" prefWidth="63.2000732421875" text="Sodium" />
+            <TableColumn fx:id="adminColumnPrice1" prefWidth="62.4000244140625" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

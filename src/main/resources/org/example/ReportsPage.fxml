@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.control.Controller">
+   <children>
+      <TableView fx:id="tableViewReports" layoutX="181.0" layoutY="40.0" prefHeight="469.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="54.4000244140625" text="C1" />
+          <TableColumn fx:id="colClientId" prefWidth="56.79998779296875" text="C2" />
+            <TableColumn fx:id="colHour" prefWidth="64.00006103515625" text="Column X" />
+            <TableColumn fx:id="colMnute" prefWidth="84.00006103515625" text="Column X" />
+            <TableColumn fx:id="colSecond" prefWidth="79.20001220703125" text="Column X" />
+            <TableColumn fx:id="colDay" prefWidth="110.39996337890625" text="Column X" />
+            <TableColumn fx:id="colOrderedItemsReport" prefWidth="160.79998779296875" text="Column X" />
+        </columns>
+      </TableView>
+      <TextField fx:id="reportFieldDayMin" layoutX="14.0" layoutY="40.0" promptText="Day Minim" />
+      <TextField fx:id="reportFieldHourMin" layoutX="13.0" layoutY="107.0" promptText="Hour Min" />
+      <TextField fx:id="reportFieldMinuteMin" layoutX="13.0" layoutY="173.0" promptText="Minute Min" />
+      <TextField fx:id="reportFieldSecondMin" layoutX="12.0" layoutY="238.0" promptText="Second Min" />
+      <Button layoutX="641.0" layoutY="517.0" mnemonicParsing="false" onAction="#goBackToAdmin" prefHeight="74.0" prefWidth="149.0" text="Back to Admin Page" />
+      <Button layoutX="12.0" layoutY="312.0" mnemonicParsing="false" onAction="#filterOrders" prefHeight="74.0" prefWidth="149.0" text="Filter Orders" />
+      <Button layoutX="181.0" layoutY="517.0" mnemonicParsing="false" onAction="#refreshOrders" prefHeight="74.0" prefWidth="150.0" text="Refresh Orders" />
+      <TextField fx:id="reportFieldDayMax" layoutX="14.0" layoutY="74.0" promptText="Day Max" />
+      <TextField fx:id="reportFieldHourMax" layoutX="13.0" layoutY="141.0" promptText="Hour Max" />
+      <TextField fx:id="reportFieldMinuteMax" layoutX="13.0" layoutY="205.0" promptText="Minute Max" />
+      <TextField fx:id="reportFieldSecondMax" layoutX="12.0" layoutY="275.0" promptText="Second Max" />
+   </children>
+</AnchorPane>

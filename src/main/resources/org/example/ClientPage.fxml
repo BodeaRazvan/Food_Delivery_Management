@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.control.Controller">
+   <children>
+      <TextField fx:id="textFieldClientTitle" layoutX="14.0" layoutY="145.0" promptText="Title" />
+      <TextField fx:id="textFieldClientRating" layoutX="14.0" layoutY="177.0" promptText="Rating" />
+      <TextField fx:id="textFieldClientCalories" layoutX="13.0" layoutY="210.0" promptText="Calories" />
+      <TextField fx:id="textFieldClientProtein" layoutX="14.0" layoutY="243.0" promptText="Protein" />
+      <TextField fx:id="textFieldClientFat" layoutX="13.0" layoutY="275.0" promptText="Fat" />
+      <TextField fx:id="textFieldClientSodium" layoutX="14.0" layoutY="307.0" promptText="Sodium" />
+      <TextField fx:id="textFieldClientPrice" layoutX="14.0" layoutY="339.0" promptText="Price" />
+      <TableView fx:id="clientProductTable" layoutX="171.0" layoutY="6.0" prefHeight="250.0" prefWidth="618.0">
+         <columns>
+            <TableColumn fx:id="clientColumnId" prefWidth="52.0" text="Id" />
+            <TableColumn fx:id="clientColumnTitle" prefWidth="140.79998779296875" text="Title" />
+            <TableColumn fx:id="clientColumnRating" prefWidth="56.0" text="Rating" />
+            <TableColumn fx:id="clientColumnCalories" prefWidth="99.20001220703125" text="Calories" />
+            <TableColumn fx:id="clientColumnProtein" prefWidth="77.60003662109375" text="Protein" />
+            <TableColumn fx:id="clientColumnFat" prefWidth="42.4000244140625" text="Fat" />
+            <TableColumn fx:id="clientColumnSodium" prefWidth="67.199951171875" text="Sodium" />
+            <TableColumn fx:id="clientColumnPrice" prefWidth="106.4000244140625" text="Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textFieldClientId" layoutX="14.0" layoutY="113.0" promptText="Id" />
+      <Button layoutX="1035.0" layoutY="520.0" mnemonicParsing="false" onAction="#goBackToLogin" prefHeight="63.0" prefWidth="150.0" text="Log Out" />
+      <Button layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#updateTableWithCurrentItemsClient" prefHeight="90.0" prefWidth="150.0" text="Refresh" />
+      <Button layoutX="12.0" layoutY="385.0" mnemonicParsing="false" onAction="#clientFindItem" prefHeight="44.0" prefWidth="150.0" text="Find" />
+      <TextField fx:id="orderFieldClient" layoutX="14.0" layoutY="552.0" prefHeight="26.0" prefWidth="368.0" />
+      <Text layoutX="14.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For order, Please enter the ids of the products with spaces in between" />
+      <Button layoutX="389.0" layoutY="520.0" mnemonicParsing="false" onAction="#createOrderClient" prefHeight="63.0" prefWidth="131.0" text="Order" />
+      <TableView fx:id="clientProductTable1" layoutX="171.0" layoutY="256.0" prefHeight="217.0" prefWidth="618.0">
+         <columns>
+            <TableColumn fx:id="clientColumnId1" prefWidth="52.0" text="Id" />
+            <TableColumn fx:id="clientColumnTitle1" prefWidth="136.0" text="Title" />
+            <TableColumn fx:id="clientColumnRating1" prefWidth="66.4000244140625" text="Rating" />
+            <TableColumn fx:id="clientColumnCalories1" prefWidth="63.199951171875" text="Calories" />
+            <TableColumn fx:id="clientColumnProtein1" prefWidth="95.199951171875" text="Protein" />
+            <TableColumn fx:id="clientColumnFat1" prefWidth="54.39990234375" text="Fat" />
+            <TableColumn fx:id="clientColumnSodium1" prefWidth="68.80010986328125" text="Sodium" />
+            <TableColumn fx:id="clientColumnPrice1" prefWidth="101.599853515625" text="Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="errorFieldClient" layoutX="171.0" layoutY="474.0" prefHeight="26.0" prefWidth="618.0" />
+      <TextArea fx:id="textAreaOrder" editable="false" layoutX="807.0" layoutY="35.0" prefHeight="461.0" prefWidth="386.0" />
+      <Text layoutX="807.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" />
+      <Button layoutX="807.0" layoutY="516.0" mnemonicParsing="false" onAction="#confirmOrder" prefHeight="70.0" prefWidth="170.0" text="Confirm Order" />
+   </children>
+</AnchorPane>

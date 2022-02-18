@@ -1,0 +1,11 @@
+Client username: asdf
+Client email: asdf@gmail.com
+Client address: asdasdasd nr.5
+
+Pateu Price: 5 Rating: 5.0
+Sarmale Price: 25 Rating: 5.0
+Ardei Umpluti Price: 15 Rating: 3.0
+Paste cu branza Price: 20 Rating: 3.0
+
+Date: 27.05.2021  17:01:54 
+Total price: 65
